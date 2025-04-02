@@ -1,0 +1,295 @@
+; Sample of KEYBOARD.CNF for the IBM-PC/AT 101-key keyboard.
+;
+[VT editor keypad]
+;Up arrow key
+Up=328
+;Down arrow key
+Down=336
+;Right arrow key
+Right=333
+;Left arrow key
+Left=331
+;Insert key
+Find=338
+;Home key
+Insert=327
+;PageUp key
+Remove=329
+;Delete key
+Select=339
+;End key
+Prev=335
+;PageDown key
+Next=337
+
+[VT numeric keypad]
+;Num pad 0 key
+Num0=82
+;Num pad 1 key
+Num1=79
+;Num pad 2 key
+Num2=80
+;Num pad 3 key
+Num3=81
+;Num pad 4 key
+Num4=75
+;Num pad 5 key
+Num5=76
+;Num pad 6 key
+Num6=77
+;Num pad 7 key
+Num7=71
+;Num pad 8 key
+Num8=72
+;Num pad 9 key
+Num9=73
+;Cntrl + Num pad '+' key
+NumMinus=1102
+;Num pad '+' key ; 78
+NumComma=off
+;Num pad '.' key
+NumPeriod=83
+;Num pad Enter key  ; 284
+NumEnter=off
+;Num pad NumLock key ; 325
+PF1=off
+;Num pad '/' key ; 309
+PF2=off
+;Num pad '*' key  ;55
+PF3=off
+;Num pad '-' key ; 74
+PF4=off
+
+[VT function keys]
+Hold=off
+Print=off
+Break=off
+;F6 key
+F6=64
+;F7 key
+F7=65
+;F8 key
+F8=66
+;F9 key
+F9=67
+;F10 key
+F10=68
+;F11 key
+F11=87
+;F12 key
+F12=88
+;Shift + F3 key
+F13=573
+;Shift + F4 key
+F14=574
+;Shift + F5 key
+Help=575
+;Shift + F6 key
+Do=576
+;Shift + F7 key
+F17=577
+;Shift + F8 key
+F18=578
+;Shift + F9 key
+F19=579
+;Shift + F10 key
+F20=580
+
+;Ctrl + F6 key
+;UDK6=1088
+;Ctrl + F7 key
+;UDK7=1089
+;Ctrl + F8 key
+;UDK8=1090
+;Ctrl + F9 key
+;UDK9=1091
+;Ctrl + F10 key
+;;UDK10=1092
+;Ctrl + F11 key
+;UDK11=1111
+;Ctrl + F12 key
+;UDK12=1112
+;Ctrl + Shift + F3 key
+;UDK13=1597
+;Ctrl + Shift + F4 key
+;UDK14=1598
+;Ctrl + Shift + F5 key
+;UDK15=1599
+;Ctrl + Shift + F6 key
+;UDK16=1600
+;Ctrl + Shift + F7 key
+;UDK17=1601
+;Ctrl + Shift + F8 key
+;UDK18=1602
+;Ctrl + Shift + F9 key
+;UDK19=1603
+;Ctrl + Shift + F10 key
+;UDK20=1604
+
+
+[X function keys]
+; F1 key
+XF1=59
+; F2 key
+XF2=60
+; F3 key
+XF3=61
+; F4 key
+XF4=62
+; F5 key
+XF5=63
+
+[Shortcut keys]
+EditCopy=off
+EditPaste=off
+EditPasteCR=off
+EditCLS=off
+EditCLB=off
+ControlOpenTEK=off
+ControlCloseTEK=off
+; Ctrl + up-arrow
+LineUp=off
+; Ctrl + down-arrow
+LineDown=off
+; Ctrl + PageUp
+PageUp=off
+; Ctrl + PageDown
+PageDown=off
+; Ctrl + Home
+BuffTop=off
+; Ctrl + End
+BuffBottom=off
+; Ctrl + Tab
+NextWin=1039
+; Ctrl + Shift + Tab
+PrevWin=1551
+LocalEcho=off
+
+;Пример определения функциональных клавиш
+;[Func keys]
+;       Ctrl + F1 key: строка символов
+;Func1=1083,0,telnet myhost
+;
+;       Ctrl + F2 key: управляющие символы
+;Func2=1084,0,$0D$0A
+;
+;       Ctrl + F3 key: символ CR с преобразованием (CR -> CR/CR+LF)
+;Func3=1085,1,$0D
+;
+;       Ctrl + F4 key: Исполнение макро-файла
+;Func4=1086,2,test.ttl
+;
+;       Ctrl + F5 key: Исполнение команды меню
+;Func5=1087,3,50110
+;
+;
+[Func keys]
+;
+; Control F1..F12
+Func1=1083,0,$00$5E
+Func2=1084,0,$00$5F
+Func3=1085,0,$00$60
+Func4=1086,0,$00$61
+Func5=1087,0,$00$62
+Func6=1088,0,$00$63
+Func7=1089,0,$00$64
+Func8=1090,0,$00$65
+Func9=1091,0,$00$66
+Func10=1092,0,$00$67
+Func11=1111,0,$00$89
+Func12=1112,0,$00$8A
+
+; Shift Tab
+Func13=527,0,$00$0F
+; Shift Insert
+Func14=850,0,$00$52
+; Shift Delete
+Func15=851,0,$00$53
+; Shift Home
+Func16=839,0,$00$47
+; Shift End
+Func17=847,0,$00$4F
+; Shift Page Up
+Func18=841,0,$00$49
+; Shift Page Down
+Func19=849,0,$00$51
+; Shift Up
+Func20=840,0,$00$48
+; Shift Down
+Func21=848,0,$00$50
+; Shift Right
+Func22=845,0,$00$4D
+; Shift Left
+Func23=843,0,$00$5B
+;
+;
+; Ctrl Insert
+Func24=1362,0,$00$92
+; Ctrl Delete
+Func25=1363,0,$00$93
+; Ctrl Home
+Func26=1351,0,$00$77
+; Ctrl End
+Func27=1359,0,$00$75
+; Ctrl Page Up
+Func28=1353,0,$00$84
+; Ctrl Page Down
+Func29=1361,0,$00$76
+; Ctrl Up
+Func30=1352,0,$00$8D
+; Ctrl Down
+Func31=1360,0,$00$91
+; Ctrl Right
+Func32=1357,0,$00$74
+; Ctrl Left
+Func33=1355,0,$00$73
+;
+;
+; ALT Keys
+; ---------
+; Alt Insert
+Func34=2386,0,$00$A2
+; Alt Delete
+Func35=2387,0,$00$A3
+; Alt Home
+Func36=2375,0,$00$97
+; Alt End
+Func37=2383,0,$00$9F
+; Alt Page Up
+Func38=2377,0,$00$99
+; Alt Page Down
+Func39=2385,0,$00$A1
+; Alt Up
+Func40=2376,0,$00$98
+; Alt Down
+Func41=2384,0,$00$A0
+; Alt Right
+Func42=2381,0,$00$9D
+; Alt Left
+Func43=2379,0,$00$9B
+;
+; Shift F1,F2
+Func44=571,0,$1B$5B$32$33$7E
+Func45=572,0,$1B$5B$32$34$7E
+; Shift F11,F12
+Func46=599,0,$1B$5B$33$35$7E
+Func47=600,0,$1B$5B$33$36$7E
+;
+; Break
+Func48=581,0,$03
+Func49=1350,0,$03
+Func50=2117,0,$03
+
+; Alt F1..F12
+Func51=2107,0,$00$68
+Func52=2108,0,$00$69
+Func53=2109,0,$00$6A
+Func54=2110,0,$00$6B
+Func55=2111,0,$00$6C
+Func56=2112,0,$00$6D
+Func57=2113,0,$00$6E
+Func58=2114,0,$00$6F
+Func59=2115,0,$00$70
+Func60=2116,0,$00$71
+Func61=2135,0,$00$8B
+Func62=2136,0,$00$8C

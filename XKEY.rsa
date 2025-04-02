@@ -1,0 +1,57 @@
+Cache for Windows NT^INT^Экспорт 1 программ(ы) из области PRG^~Format=Cache.S~
+%RO on Jan 17 2003   4:56 PM
+XKEY^INT^1^59186,60760^0
+XKEY04(vrem) ;[ 19.11.2002 ]
+ ;N (vrem)
+ U 0:(:"+ISB")
+ S %k=""
+ F  D get(.%char,.%ZB)   Q:%k'=""      ;W:%char'=""!(%ZB'="") "char='",%char,"', %k='",%ZB,"'",! Q:%ZB="ESC"  
+ U 0:(:"-IS")
+ Q %k
+get(char,%ZB) 
+ ; N c,c1
+  S char="",%k="",d=""
+  N c,c1,c2 S char="",%k=""
+  R *c:0.1 I c=-1 Q
+  I c=127 S %k="DEL" Q
+  I c=9 S %k="TAB" Q
+  I c=13 S %k="ENT" Q
+  I c>31 S %k=c Q
+  I c=27 D  Q
+  .R *c:0.1 I c=-1 S %k="ESC" Q
+  .I c=79 R *c:0.1 D  Q
+  ..I 80'>c&(c'>84) S %k="F"_(c-79) Q
+  ..S %k="BAD"
+  .I c=91 R *c:0.1 D  Q
+  ..;W "===="_c H 1
+  ..I c=68 S %k="ARL" Q
+  ..I c=67 S %k="ARR" Q
+  ..I c=65 S %k="ARU" Q
+  ..I c=66 S %k="ARD" Q  
+  ..R *c1:0.1 I c1=-1 S %k="BAD" Q
+  ..D:(c=49)!(c=50)  I c1'=126 Q
+  ...I c=49 I c1=49 S %k="F1" Q
+  ...I c=49 I c1=50 S %k="F2" Q
+  ...I c=49 I c1=51 S %k="F3" Q
+  ...I c=49 I c1=52 S %k="F4" Q
+  ...I c=49 I c1=53 S %k="F5" Q
+  ...I c=49 I c1=55 S %k="F6" Q
+  ...I c=49 I c1=56 S %k="F7" Q
+     ...I c=49 I c1=57 S %k="F8" Q
+     ...I c=50 I c1=48 S %k="F9" Q
+     ...I c=50 I c1=49 S %k="F10" Q
+     ...I c=50 I c1=51 S %k="F11" Q 
+     ...I c=50 I c1=52 S %k="F12" Q 
+     ..I c1'=126 Q        
+     ..;I 49'>c1&(c1'>52) R *c2:0.2 I c2=-1 Q    ;S %k=$S(c1=49:"F10",c1=48:"F9",c1=52:"F12",c1=51:"F11",c1=126:"F"_(c-55+$S(c>53:6,1:7)),1:"BAD") Q
+  ..D    I c1=126 Q    ;I 49'>c&(c'>57) R *c1:0.1  W "49  "_c1 H 1   D  Q
+     ...I c=50 I c1=126 S %k="INS" Q
+     ...I c=52 I c1=126 S %k="END" Q
+     ...I c=53 I c1=126 S %k="PGU" Q
+     ...I c=54 I c1=126 S %k="PGD" Q
+     ...I c=51 I c1=126 S %k="DEL" Q
+     ...I c=49 I c1=126 S %k="HOM" Q
+  
+
+
+
