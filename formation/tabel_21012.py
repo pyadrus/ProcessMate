@@ -18,34 +18,19 @@ def opening_formation_of_reports(dist) -> None:
     """Открытие функции штатная должность"""
     send_keys('{DOWN}', with_spaces=True)
     send_keys('{VK_RIGHT}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
+    for _ in range(3):
+        send_keys('{DOWN}', with_spaces=True, pause=0.1)
     send_keys('{VK_RIGHT}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
-    send_keys('{DOWN}', with_spaces=True)
+    for _ in range(9):
+        send_keys('{DOWN}', with_spaces=True, pause=0.1)
     send_keys('{ENTER 2}', with_spaces=True, pause=1)
     send_keys('{VK_RIGHT}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
-    send_keys('{DOWN}', with_spaces=True, pause=0.1)
+    for _ in range(11):
+        send_keys('{DOWN}', with_spaces=True, pause=0.1)
     send_keys('{ENTER 2}', with_spaces=True, pause=0.1)
     send_keys('{UP}', with_spaces=True, pause=0.1)
-    site_selection = "112022"
+
+    site_selection = "042024"
     dataa = list(site_selection)
     for keys_pas in dataa:
         send_keys('{VK_NUMPAD' + keys_pas + '}', with_spaces=True)
