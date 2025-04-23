@@ -8,7 +8,6 @@ from launch_program import launch_program
 def main(dist_list) -> None:
     """Запуск программы"""
     for dist in dist_list:
-        print("Привет, мир!")
         launch_program()  # Запускаем программу, вводим пароль
         opening_formation_of_reports(dist)  # Включение табеля с вводом месяца
         time.sleep(1)
