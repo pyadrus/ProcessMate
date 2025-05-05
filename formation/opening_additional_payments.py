@@ -20,6 +20,7 @@ def opening_additional_payments_1(dist_list, site_selection) -> None:
             opening_formation_of_reports_1(dist, site)
     logger.info("Формирование доплат завершено!")
 
+
 def opening_formation_of_reports_1(dist, site_selection) -> None:
     """Открытие функции Формирование доплат"""
     send_keys('{DOWN}', with_spaces=True, pause=0.2)
@@ -48,8 +49,6 @@ def opening_formation_of_reports_1(dist, site_selection) -> None:
     send_keys('{ENTER 2}', with_spaces=True)
 
 
-
-
 def opening_additional_payments(dist_list, site_selection) -> None:
     """
     Формирование доплат
@@ -65,6 +64,7 @@ def opening_additional_payments(dist_list, site_selection) -> None:
             launch_program()  # Запускаем программу, вводим пароль
             opening_formation_of_reports(dist, site)
     logger.info("Формирование доплат завершено!")
+
 
 def opening_formation_of_reports(dist, site_selection) -> None:
     """Открытие функции Формирование доплат"""

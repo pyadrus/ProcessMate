@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Основное меню</h1>
+        <div class="buttons">
+            {% for button in buttons %}
+            <form action="{{ button.endpoint }}" method="post" class="button-form">
+                <button type="submit">{{ button.name }}</button>
+            </form>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

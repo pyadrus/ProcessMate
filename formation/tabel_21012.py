@@ -30,7 +30,7 @@ def opening_formation_of_reports(dist) -> None:
     send_keys('{ENTER 2}', with_spaces=True, pause=0.1)
     send_keys('{UP}', with_spaces=True, pause=0.1)
 
-    site_selection = "082024"
+    site_selection = "122024"
     dataa = list(site_selection)
     for keys_pas in dataa:
         send_keys('{VK_NUMPAD' + keys_pas + '}', with_spaces=True)

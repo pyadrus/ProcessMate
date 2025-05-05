@@ -13,6 +13,7 @@ def main() -> None:
     opening_formation_of_reports()  # Включение табеля с вводом месяца
     time.sleep(1)
 
+
 def opening_formation_of_reports() -> None:
     """Открытие функции штатная должность"""
     send_keys('{DOWN}', with_spaces=True)

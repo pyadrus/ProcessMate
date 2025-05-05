@@ -1,5 +1,7 @@
-pywinauto
+pywinauto~=0.6.9
 xlrd
 xlwt
 flet
-loguru
+loguru~=0.7.3
+fastapi~=0.115.12
+uvicorn~=0.34.2
